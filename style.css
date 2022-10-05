@@ -6,11 +6,8 @@
     font-family: "Roboto";
 }
 
-html {
-    height: 100vh;
-}
-
 body {
+    height: 100vh;
     background-image: url(./images/bg.jpg   );
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,4 +169,92 @@ main {
 .circle-second {
     top: 45.2%;
     left: 123.2%;
+}
+
+/* media query */
+
+@media screen and (max-width:1230px) {
+    .logo img {
+        width: 164px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .heading {
+        font-size: 64px;
+    }
+
+    .info-second {
+        position: relative;
+        margin-top: -148px;
+        margin-left: -36px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .logo img {
+        width: 148px;
+    }
+
+    .contact {
+        border-bottom: none;
+    }
+
+    .heading {
+        font-size: 52px;
+        position: relative;
+        margin-top: -200px;
+    }
+
+    .infocard .vertical-line {
+        display: none;
+    }
+
+    .infocard .circle {
+        display: none;
+    }
+
+    .infocard .horizontal-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        height: 124vh;
+    }
+    
+    .heading {
+        font-size: 32px;
+        position: relative;
+        margin-top: -186px;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infocard {
+        margin-left: -248px;
+        
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info-second {
+        margin-left: 244px;
+        margin-top: -68px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+    }
 }
